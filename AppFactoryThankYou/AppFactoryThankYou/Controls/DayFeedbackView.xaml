@@ -1,0 +1,40 @@
+﻿<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:AppFactoryThankYou"
+             mc:Ignorable="d"
+             x:Class="AppFactoryThankYou.DayFeedbackView">
+
+    <d:ContentView.BindingContext>
+        <local:DayFeedback />
+    </d:ContentView.BindingContext>
+
+    <ScrollView>
+        <StackLayout x:Name="rootLayout" Spacing="5">
+
+            <Label Text="{Binding Day, StringFormat='Day {0}'}"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource MessageStyle}"
+                   d:Text="Day X"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,15" />
+
+            <Label x:Name="messageLabel"
+                   HorizontalTextAlignment="Center"
+                   Style="{StaticResource MessageStyle}"
+                   d:Text="Messages Here..."
+                   Margin="0,0,0,15" />
+
+            <Label Text="How did you find this day?" />
+            <local:RatingView Rating="{Binding Rating}"
+                              Margin="0,0,0,15" />
+
+            <Label Text="Do you have any comments about what you loved or hated?" />
+            <Editor Text="{Binding Comments}"
+                    Placeholder="enter any comments..."
+                    VerticalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentView>

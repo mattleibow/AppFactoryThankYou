@@ -1,0 +1,35 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:AppFactoryThankYou"
+             mc:Ignorable="d"
+             x:Class="AppFactoryThankYou.MainPage"
+             Title="Feedback">
+
+    <StackLayout Padding="20" Spacing="5">
+        <Grid x:Name="slideContainer"
+              VerticalOptions="FillAndExpand"
+              Padding="0" ColumnSpacing="0" RowSpacing="0">
+
+            <!-- content created at runtime -->
+
+        </Grid>
+
+        <Label Text="{Binding StatusMessage}"
+               TextColor="Red"
+               HorizontalTextAlignment="Center" />
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Padding="0" Spacing="5">
+            <Button Text="Previous" WidthRequest="120"
+                    IsEnabled="{Binding HasPreviousDays}"
+                    Clicked="OnPreviousClicked" />
+            <Button Text="Next" WidthRequest="120"
+                    IsEnabled="{Binding HasNextDays}"
+                    Clicked="OnNextClicked" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

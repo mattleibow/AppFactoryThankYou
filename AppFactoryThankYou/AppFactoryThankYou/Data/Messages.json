@@ -1,0 +1,10 @@
+﻿{
+  "intro": "Merci Beaucoup!\n\nThank you for joining me in learning about Xamarin and Azure!\nI had great fun sharing with you and I hope that in some small way I inspired you to go out and create awesome mobile apps.\n\nBefore we say goodbye, I was hoping that you would take the time to give some feedback so that I can improve myself when presenting and sharing. Your feedback is very much valued and I cannot become better without your help.\n\nPlease take the time to fill in the next few pages.",
+  "summary": "Almost there!\n\nJust before you finish, you you care to leave your name so that I can follow up with you? And, you can also leave some contact details to that I can follow you on Twitter or send you an email.",
+  "exit": "Merci Beaucoup!\n\nYour feedback is valuable to me and I WILL take the time to read it. If your comments and ratins are positive, I will smile inside. If you had a problem with me, I will make sure to address it and get back to you.\n\nThank you again for being such a great developer and I hope to see what you create in the future!\n\nHappy Coding!\n\n👋",
+  "messages": [
+    "On the first day, I had a great time getting to know you a little.\n\nWe had a look at many different things, ranging from pages, controls, layouts, styles, custom views, animations, data binding, commanding, local databases with SQLite and many other exciting things.",
+    "On the second day, I was inspired at what you were creating.\n\nWe looked at several things in Azure, such as cloud data with Cosmos DB, serverless with Azure Functions, analytics with App Center and more.",
+    "On the last day, I had a great time chatting with you.\n\nWe went over some of the old things and discovered some cool things that we could do with Cognitive Services, including image and text recognition, image classification and text translation."
+  ]
+}
